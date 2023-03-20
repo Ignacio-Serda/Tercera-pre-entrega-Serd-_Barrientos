@@ -1,3 +1,9 @@
-Tercera pre-entrega Django
+### Tercera pre-entrega
 
-Desde el inicio se puede acceder a todos los formularios tanto de creacion como de busqueda a través de las pestañas de la parte de arriba.
+Página Web Django
+
+### Contenido
+
+-Formularios GET y POST
+-Herencia de Templates
+-Base de Datos
