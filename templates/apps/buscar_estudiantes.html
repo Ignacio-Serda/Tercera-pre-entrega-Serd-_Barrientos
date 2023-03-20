@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+    {% if estudiantes %}
+
+        {% for estudiante in estudiantes %}
+
+            <br>
+            <div class="form">
+                <h4>Estudiante: {{estudiante.nombre}} {{estudiante.apellido}}&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;{{estudiante.email}}</h4>
+            </div>
+            <br>
+
+        {% endfor %}
+
+    {% else %}
+        <br>
+        <div class="form">
+            <h2>No hay estudiantes con este filtrado</h2>
+        </div>
+        <br>
+    {% endif %}
+
+{% endblock %}

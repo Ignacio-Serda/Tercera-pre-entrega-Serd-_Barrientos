@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+    {% if tareas %}
+
+        {% for tarea in tareas %}
+
+            <br>
+            <div class="form">
+                <h4>Tarea: {{tarea.nombre}}</h4>
+            </div>
+            <br>
+
+        {% endfor %}
+
+    {% else %}
+        <br>
+        <div class="form">
+            <h2>No hay tareas con este filtrado</h2>
+        </div>
+        <br>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+{% block content %}
+    <div class="form">
+        <br>
+        <h2>Buscar Curso:</h2>
+        <br>
+        <form action="{% url 'BUSCAR_CURSOS' %}" method="GET">
+            {{forms_curso.as_p}}
+            <input type="submit" value="Buscar">
+        </form>
+        <br>
+        <hr>
+        <h2>Buscar Estudiante:</h2>
+
+        <br>
+        <form action="{% url 'BUSCAR_ESTUDIANTES' %}" method="GET" >
+            {{forms_estudiantes.as_p}}
+            <input type="submit" value="Buscar">
+        </form>
+        <br>
+        <hr>
+        <h2>Buscar Profesor:</h2>
+
+        <br>
+        <form action="{% url 'BUSCAR_PROFESORES' %}" method="GET" >
+            {{forms_profesores.as_p}}
+            <input type="submit" value="Buscar">
+        </form>
+        <br>
+        <hr>
+        <h2>Buscar Tarea:</h2>
+
+        <br>
+        <form action="{% url 'BUSCAR_TAREAS' %}" method="GET" >
+            {{forms_tareas.as_p}}
+            <input type="submit" value="Buscar">
+        </form>
+        <br>
+    </div>
+{% endblock %}

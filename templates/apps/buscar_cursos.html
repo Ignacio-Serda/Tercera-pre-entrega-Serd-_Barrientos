@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+    {% if cursos %}
+
+        {% for curso in cursos %}
+
+            <br>
+            <div class="form">
+                <h4>Curso: {{curso.nombre}} {{curso.camada}}</h4>
+            </div>
+            <br>
+            <p></p>
+        
+        {% endfor %}
+
+    {% else %}
+        <br>
+        <div class="form">
+            <h2>No hay cursos con este filtrado</h2>
+        </div>
+        <br>
+    {% endif %}
+
+{% endblock %}

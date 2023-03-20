@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+{% block content %}
+    <div class="form">
+        <br>
+        <h2>Ingresar Profesor:</h2>
+        <br>
+        <form action="{% url 'FORMS_PROFESORES' %}" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Crear">
+        </form>
+        <br>
+    </div>
+{% endblock %}
